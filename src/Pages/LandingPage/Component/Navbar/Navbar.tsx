@@ -1,4 +1,3 @@
-import React from "react";
 import logo from "./Assets/ccs_20.png";
 
 function Navbar() {
