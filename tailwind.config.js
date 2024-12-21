@@ -10,6 +10,7 @@ export default {
 				abeezee: ["ABeeZee", "sans-serif"],
 				fugaz_one: ["Fugaz One", "sans-serif"],
 				open_sans: ["Open Sans", "sans-serif"],
+				inter: ["Inter", "sans-serif"],
 			},
 			borderRadius: {
 				lg: "var(--radius)",
