@@ -10,7 +10,7 @@ import ccLogo from "./Assets/ccs_20.png";
 import menuLogo from "./Assets/menuLogo.svg";
 import { ImgHTMLAttributes } from "react";
 
-export default function Trial() {
+export default function NewNavbar() {
 	return (
 		<header className="fixed flex h-16 mt-5 w-[90dvw] mx-[5dvw] rounded-md shrink-0 items-center px-4 md:px-6 bg-[#ffffff1a] text-white">
 			<Sheet>
@@ -73,7 +73,7 @@ export default function Trial() {
 	);
 }
 
-function CCSLogo(props: ImgHTMLAttributes<HTMLImageElement>) {
+function CCSLogo(props: Readonly<ImgHTMLAttributes<HTMLImageElement>>) {
 	return (
 		<img
 			src={ccLogo}

@@ -1,5 +1,5 @@
 import Landing from "./Pages/LandingPage/Landing";
-import Trial from "./Pages/LandingPage/Component/Navbar/trial";
+import Trial from "./Pages/LandingPage/Component/Navbar/NewNavbar";
 
 function App() {
 	return <Landing />;

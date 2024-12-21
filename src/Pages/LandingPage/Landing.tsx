@@ -1,13 +1,12 @@
 import bg from "./Assets/landing_bg.png";
 import earth from "./Assets/earth_graphic.png";
 import logo from "./Assets/hacktu_logo.png";
-import Navbar from "./Component/Navbar/Navbar";
-import Trial from "./Component/Navbar/trial";
+import NewNavbar from "./Component/Navbar/NewNavbar";
 
 function Landing() {
 	return (
 		<>
-			<Trial />
+			<NewNavbar />
 			<div
 				className="bg-contain bg-repeat bg-center h-screen w-screen flex justify-between items-center gap-x-7 pr-10"
 				style={{ backgroundImage: `url(${bg})` }}
@@ -17,7 +16,7 @@ function Landing() {
 					alt="earth"
 					className="h-full w-1/2 object-contain"
 				/>
-				<div className="flex flex-col h-3/4 max-w-1/2 gap-y-5 w-max justify-center items-center">
+				<div className="flex flex-col h-3/4 max-w-1/2 gap-y-5 w-max justify-center items-center px-[3dvw]">
 					<img
 						src={logo}
 						alt="logo"
@@ -26,7 +25,7 @@ function Landing() {
 					<h1 className="self-start text-[#D9D9D9] text-[4vh] font-bold font-lexend">
 						7-9th Feb 2025
 					</h1>
-					<p className="text-[#D9D9D9] text-[2.5vh] font-abel">
+					<p className="text-[#D9D9D9] text-[2.5vh] font-abel text-justify">
 						Creative Computing Society is back with HackTU, flagship event
 						to be hosted at Thapar Institute of Engineering and
 						Technology, Patiala and we're excited to see what new and
