@@ -2,16 +2,21 @@ import bg from "./Assets/landing_bg.png";
 import earth from "./Assets/earth_graphic.png";
 import logo from "./Assets/hacktu_logo.png";
 
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
+
 function Landing() {
 	return (
 		<div
 			className="bg-contain bg-repeat bg-center h-screen w-full flex justify-between items-center gap-x-7 pr-10"
 			style={{ backgroundImage: `url(${bg})` }}
 		>
-			<img
+			<LazyLoadImage
 				src={earth}
 				alt="earth"
 				className="h-full w-1/2 object-contain"
+				effect="blur"
+				visibleByDefault={true}
 			/>
 			<div className="flex flex-col h-3/4 max-w-1/2 gap-y-5 w-max justify-center items-center px-[3dvw]">
 				<img

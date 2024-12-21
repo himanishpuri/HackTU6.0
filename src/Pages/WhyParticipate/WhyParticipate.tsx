@@ -3,6 +3,8 @@ import network from "./assets/network_logo.svg";
 import earth_network from "./assets/earth_network_logo.svg";
 import gears from "./assets/gear_logo.svg";
 import trophy from "./assets/trophy_logo.svg";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 const reasonsData = [
 	{
@@ -44,9 +46,10 @@ function Reasons({
 }>) {
 	return (
 		<div className="flex justify-start items-left w-full gap-5">
-			<img
+			<LazyLoadImage
 				src={img}
 				alt={imgAlt}
+				effect="blur"
 			/>
 			<div className="flex flex-col justify-between items-start">
 				<h2 className="text-[#D1FAE5] text-lg">{title}</h2>
@@ -75,10 +78,12 @@ function WhyParticipate() {
 					))}
 				</div>
 			</div>
-			<img
+			<LazyLoadImage
 				src={hamlet}
 				alt="hamlet"
 				className="w-[40dvw] aspect-square"
+				effect="blur"
+				threshold={200}
 			/>
 		</div>
 	);
