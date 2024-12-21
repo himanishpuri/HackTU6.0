@@ -36,7 +36,7 @@ export default function NewNavbar() {
 					className="bg-transparent text-white border-none"
 					side="left"
 				>
-					<button className="mr-6 lg:flex">
+					<button className="mr-6 lg:flex ">
 						<CCSLogo />
 						<span className="sr-only">HackTU</span>
 					</button>
@@ -62,17 +62,15 @@ export default function NewNavbar() {
 					</div>
 				</SheetContent>
 			</Sheet>
-			<Button
-				variant="outline"
-				size="icon"
-				className="mr-6 hidden lg:flex"
+			<button
+				className="mr-6 hidden lg:flex bg-transparent border-none"
 				onClick={() => {
 					navigate("/");
 				}}
 			>
 				<CCSLogo />
 				<span className="ml-3">HackTU</span>
-			</Button>
+			</button>
 			<nav className="ml-auto hidden lg:flex gap-6">
 				<NavButton text="ABOUT" />
 				<NavButton text="SCHEDULE" />
