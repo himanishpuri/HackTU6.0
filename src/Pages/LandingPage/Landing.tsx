@@ -4,6 +4,7 @@ import logo from "./Assets/hacktu_text.png";
 
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
+import Timer from "./Component/Timer";
 
 function Landing() {
   return (
@@ -36,21 +37,7 @@ function Landing() {
           </button>
         </div>
         <div className="mt-7 flex gap-5 flex-col">
-          <h1 className="text-4xl text-white text-center">LIVE IN</h1>
-          <div className="flex gap-4">
-            <div className=" border-2 flex justify-center items-center flex-col rounded-xl py-4 px-5 border-[#A0BED3]">
-              <h1 className=" font-bold text-2xl text-white">30</h1>
-              <p className="text-xl text-[#A0BED3] font-bold">days</p>
-            </div>
-            <div className=" border-2 flex justify-center items-center flex-col rounded-xl py-4 px-5 border-[#A0BED3]">
-              <h1 className=" font-bold text-2xl text-white">30</h1>
-              <p className="text-xl text-[#A0BED3] font-bold">hours</p>
-            </div>
-            <div className=" border-2 flex justify-center items-center flex-col rounded-xl py-4 px-5 border-[#A0BED3]">
-              <h1 className=" font-bold text-2xl text-white">30</h1>
-              <p className="text-xl text-[#A0BED3] font-bold">mins</p>
-            </div>
-          </div>
+          <Timer />
         </div>
       </div>
     </div>

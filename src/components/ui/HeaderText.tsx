@@ -4,7 +4,7 @@ interface headingProps {
 }
 const HeaderText = ({ text }: headingProps) => {
   return (
-    <div className="flex justify-center items-center w-full bg-[#0F203E]">
+    <div className="flex justify-center items-center w-full pb-10 bg-[#0F203E]">
       <h1 className="text-[100px] text-[#D1FAE5] mt-[120px] font-extrabold tracking-normal absolute">
         {text}
       </h1>
