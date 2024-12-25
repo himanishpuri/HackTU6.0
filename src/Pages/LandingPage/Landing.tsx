@@ -1,50 +1,60 @@
 import bg from "./Assets/landing_bg.png";
 import earth from "./Assets/earth_graphic.png";
-import logo from "./Assets/hacktu_logo.png";
+import logo from "./Assets/hacktu_text.png";
 
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
 
 function Landing() {
-	return (
-		<div
-			className="bg-contain bg-repeat bg-center h-screen w-full flex justify-between items-center gap-x-7 pr-10"
-			style={{ backgroundImage: `url(${bg})` }}
-		>
-			<LazyLoadImage
-				src={earth}
-				alt="earth"
-				className="h-full w-1/2 object-contain"
-				effect="blur"
-				visibleByDefault={true}
-			/>
-			<div className="flex flex-col h-3/4 max-w-1/2 gap-y-5 w-max justify-center items-center px-[3dvw]">
-				<img
-					src={logo}
-					alt="logo"
-					className="self-start w-64 aspect-square max-w-[50%] object-contain ml-[-50px]"
-				/>
-				<h1 className="self-start text-[#D9D9D9] text-[4vh] font-bold font-lexend">
-					7-9th Feb 2025
-				</h1>
-				<p className="text-[#D9D9D9] text-[2.5vh] font-abel text-justify">
-					Creative Computing Society is back with HackTU, flagship event to
-					be hosted at Thapar Institute of Engineering and Technology,
-					Patiala and we're excited to see what new and exciting ideas will
-					come out of this year's event. Whether you're a seasoned hacker
-					or new to the game, there's something for everyone at HackTU.
-					Development is more of an adrenaline rush than a mere feeling.
-					The Computer world today is a race between software engineers
-					striving to build bigger and better, and the demand of this
-					modernistic era is to explore the innovative corners along with
-					building solutions that are easy-to-use. Gear up your tech stack,
-					brainstorm innovative ideas, ignite the team spirit and build
-					solutions for real-time problems at HackTU, the biggest offline
-					Hackathon of TIET!
-				</p>
-			</div>
-		</div>
-	);
+  return (
+    <div
+      className="bg-contain bg-repeat bg-center h-screen w-full flex justify-between items-center gap-x-7 pr-10"
+      style={{ backgroundImage: `url(${bg})` }}
+    >
+      <LazyLoadImage
+        src={earth}
+        alt="earth"
+        className="h-full w-1/2 object-contain"
+        effect="blur"
+        visibleByDefault={true}
+      />
+      <div className="flex flex-col h-1/3 mt-10 max-w-1/2 gap-y-2 w-max justify-center items-center px-[3dvw]">
+        <img
+          src={logo}
+          alt="logo"
+          className="self-start  object-contain ml-[-50px]"
+        />
+        <h1 className="self-center text-[#D9D9D9] text-[3.5vh] font-space-grotesk">
+          8-9th Feb 2025
+        </h1>
+        <div className="mt-10 flex flex-col gap-5">
+          <button className="font-space-grotesk hover:scale-105 transition-all font-light px-14 rounded-md py-3 bg-[#A0BED3]">
+            Register Now
+          </button>
+          <button className="font-space-grotesk hover:scale-105 transition-all font-light px-14 rounded-md py-3  border text-white border-white">
+            Chekpoint 0
+          </button>
+        </div>
+        <div className="mt-7 flex gap-5 flex-col">
+          <h1 className="text-4xl text-white text-center">LIVE IN</h1>
+          <div className="flex gap-4">
+            <div className=" border-2 flex justify-center items-center flex-col rounded-xl py-4 px-5 border-[#A0BED3]">
+              <h1 className=" font-bold text-2xl text-white">30</h1>
+              <p className="text-xl text-[#A0BED3] font-bold">days</p>
+            </div>
+            <div className=" border-2 flex justify-center items-center flex-col rounded-xl py-4 px-5 border-[#A0BED3]">
+              <h1 className=" font-bold text-2xl text-white">30</h1>
+              <p className="text-xl text-[#A0BED3] font-bold">hours</p>
+            </div>
+            <div className=" border-2 flex justify-center items-center flex-col rounded-xl py-4 px-5 border-[#A0BED3]">
+              <h1 className=" font-bold text-2xl text-white">30</h1>
+              <p className="text-xl text-[#A0BED3] font-bold">mins</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 }
 
 export default Landing;
