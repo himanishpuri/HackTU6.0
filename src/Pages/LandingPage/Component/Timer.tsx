@@ -1,35 +1,37 @@
 import { useState, useEffect } from "react";
 
 export default function Timer() {
+  const targetDate = new Date("2025-02-08T11:00:00"); // Set your specific date and time here
   const [time, setTime] = useState({
-    days: 50,
-    hours: 30,
-    mins: 30,
-    secs: 30,
+    days: 0,
+    hours: 0,
+    mins: 0,
+    secs: 0,
   });
 
   useEffect(() => {
-    const countdown = setInterval(() => {
-      setTime((prevTime) => {
-        const { days, hours, mins, secs } = prevTime;
+    const calculateTimeLeft = () => {
+      const now = new Date();
+      const difference = targetDate.getTime() - now.getTime();
 
-        if (secs > 0) {
-          return { ...prevTime, secs: secs - 1 };
-        } else if (mins > 0) {
-          return { ...prevTime, secs: 59, mins: mins - 1 };
-        } else if (hours > 0) {
-          return { ...prevTime, secs: 59, mins: 59, hours: hours - 1 };
-        } else if (days > 0) {
-          return { days: days - 1, hours: 23, mins: 59, secs: 59 };
-        } else {
-          clearInterval(countdown); // Stop the timer
-          return prevTime;
-        }
-      });
-    }, 1000); // Update every second
+      if (difference > 0) {
+        const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((difference / (1000 * 60 * 60)) % 24);
+        const mins = Math.floor((difference / (1000 * 60)) % 60);
+        const secs = Math.floor((difference / 1000) % 60);
 
-    return () => clearInterval(countdown); // Cleanup
-  }, []);
+        setTime({ days, hours, mins, secs });
+      } else {
+        // Stop the timer when the target date is reached
+        setTime({ days: 0, hours: 0, mins: 0, secs: 0 });
+        clearInterval(timerInterval);
+      }
+    };
+
+    const timerInterval = setInterval(calculateTimeLeft, 1000); // Update every second
+
+    return () => clearInterval(timerInterval); // Cleanup on component unmount
+  }, []); // Removed `targetDate` dependency as it doesn't change
 
   return (
     <div className="flex flex-col items-center mt-7 gap-5">
