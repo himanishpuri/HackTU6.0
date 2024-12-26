@@ -29,12 +29,12 @@ const PrizeCards = () => {
             onClick={() => handleCardClick(index)}
             className={`w-41 h-48 rounded-lg flex flex-col justify-center items-center border-2 border-blue-800 cursor-pointer transition-transform duration-300  ${
               openCard === index
-                ? "bg-teal-300 text-gray-800 scale-105"
+                ? "bg-teal-500 text-gray-800 scale-105"
                 : "bg-gray-800 text-white"
             } shadow-lg`}
           >
             {openCard === index ? (
-              <div className="text-center font-bold text-lg ">{prize}</div>
+              <div className="text-center shadow-[#D1FAE5] font-extrabold text-2xl " >{prize}</div>
             ) : (
               <div className="text-center font-bold text-lg h-[4vh] w-[4vw]">
                 {index === 0
@@ -48,7 +48,7 @@ const PrizeCards = () => {
                   : "All Girls"}
               </div>
             )}
-          </div>
+            </div>
         ))}
       </div>
     </>
