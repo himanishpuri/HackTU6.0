@@ -1,4 +1,3 @@
-import React from "react";
 import HeaderText from "@/components/ui/HeaderText";
 
 const sponserData = [

@@ -1,4 +1,3 @@
-import React from "react";
 import "./Time.css";
 import timelineElements from "./timelineElements.tsx";
 
@@ -31,7 +30,6 @@ function TimeLineTwoo() {
                   <h3 className="timeline-title">{element.title} </h3>
                   <h3 className="px-7">{element.time}</h3>
                 </div>
-                <h5 className="timeline-subtitle">{element.location} </h5>
                 <h5 className="timeline-subtitle"></h5>
                 <p className="timeline-description">{element.description}</p>
                 {showButton && (

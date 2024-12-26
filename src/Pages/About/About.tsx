@@ -1,5 +1,4 @@
 import HeaderText from "@/components/ui/HeaderText";
-import React from "react";
 import graphic from "./Assets/graphic.png";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 

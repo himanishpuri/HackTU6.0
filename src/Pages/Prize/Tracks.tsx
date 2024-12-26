@@ -1,5 +1,4 @@
 import HeaderText from "@/components/ui/HeaderText";
-import React from "react";
 import track from "./Assets/tracks.png";
 
 const Tracks = () => {
