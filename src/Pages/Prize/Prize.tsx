@@ -41,6 +41,7 @@ const PrizeCards = () => {
               width: expanded === index ? "300px" : "100px",
               height: "200px",
               shadow: "10px 4px 4px rgba(0, 0, 0, 0.45)",
+              borderRight: "1px solid #ffffff",
               cursor: "pointer",
             }}
             onClick={() => setExpanded(index)}
