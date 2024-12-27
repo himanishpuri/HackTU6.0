@@ -8,6 +8,7 @@ import Timeline from "./Pages/Timeline/Timeline";
 import Gallery from "./Pages/Gallery/Gallery";
 import Sponsers from "./Pages/Sponsers/Sponsers";
 import Faq from "./Pages/FAQ/Faq";
+import NewPrize from "./Pages/Prize/NewPrize";
 
 function MainLayout() {
   return (
@@ -15,8 +16,9 @@ function MainLayout() {
       <NewNavbar />
       <Landing />
       <About />
+      <NewPrize/>
       <Timeline />
-      <Prize />
+      {/* <Prize /> */}
       <Tracks />
       <Gallery />
       <Sponsers />
