@@ -2,39 +2,39 @@ import HeaderText from "@/components/ui/HeaderText";
 import graphic from "./Assets/graphic.png";
 
 const Gallery = () => {
-  const images = [graphic, graphic, graphic, graphic, graphic]; // Replace these paths with your image paths
+	const images = [graphic, graphic, graphic, graphic, graphic]; // Replace these paths with your image paths
 
-  return (
-    <div className="gallery-container bg-[#0F203E] mx-20">
-      <HeaderText text="GALLERY" />
-      <div className="carousel">
-        {/* First row: Left to right */}
-        <div className="carousel-row left-to-right">
-          {images.concat(images).map((src, index) => (
-            <img
-              key={`ltr-${index}`}
-              src={src}
-              alt={`Gallery Image ${index + 1}`}
-              className="carousel-image"
-            />
-          ))}
-        </div>
+	return (
+		<div className="gallery-container bg-[#0F203E] mx-20">
+			<HeaderText text="GALLERY" />
+			<div className="carousel">
+				{/* First row: Left to right */}
+				<div className="carousel-row left-to-right">
+					{images.concat(images).map((src, index) => (
+						<img
+							key={`ltr-${index * 23}`}
+							src={src}
+							alt={`GalleryImage${index + 1}`}
+							className="carousel-image"
+						/>
+					))}
+				</div>
 
-        {/* Second row: Right to left */}
-        <div className="carousel-row right-to-left">
-          {images.concat(images).map((src, index) => (
-            <img
-              key={`rtl-${index}`}
-              src={src}
-              alt={`Gallery Image ${index + 1}`}
-              className="carousel-image"
-            />
-          ))}
-        </div>
-      </div>
+				{/* Second row: Right to left */}
+				<div className="carousel-row right-to-left">
+					{images.concat(images).map((src, index) => (
+						<img
+							key={`rtl-${index * 23}`}
+							src={src}
+							alt={`GalleryImage${index + 1}`}
+							className="carousel-image"
+						/>
+					))}
+				</div>
+			</div>
 
-      {/* Styles */}
-      <style>{`
+			{/* Styles */}
+			<style>{`
         .gallery-container {
           text-align: center;
           padding: 2rem 0;
@@ -57,6 +57,9 @@ const Gallery = () => {
           animation-duration: 15s;
           animation-timing-function: linear;
           animation-iteration-count: infinite;
+          animation-fill-mode: forwards;
+          animation-play-state: running;
+          animation-loop: true;
         }
         .carousel-row img {
           width: 300px;
@@ -97,8 +100,8 @@ const Gallery = () => {
           }
         }
       `}</style>
-    </div>
-  );
+		</div>
+	);
 };
 
 export default Gallery;
