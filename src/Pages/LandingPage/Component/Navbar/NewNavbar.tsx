@@ -15,6 +15,7 @@ const scrollToSection = (
 	tag: string,
 	closeSidebar?: () => void, // Accept a function to close the sidebar
 ) => {
+	e.preventDefault();
 	if (closeSidebar) closeSidebar(); // Close the sidebar when a link is clicked
 	gsap.to(window, {
 		duration: 1.3,
