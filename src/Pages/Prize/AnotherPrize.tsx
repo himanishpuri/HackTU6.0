@@ -15,7 +15,7 @@ function AnotherPrize() {
 			<LazyLoadImage
 				src={prize_bg}
 				alt="prizes"
-				className="object-cover w-[58vw]"
+				className="object-cover w-[53vw]"
 				effect="blur"
 			/>
 		</div>

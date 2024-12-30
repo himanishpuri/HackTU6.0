@@ -66,9 +66,14 @@ const faqData = [
 	},
 ];
 
+import global_bg from "/global_bg.png";
+
 const Faq = () => {
 	return (
-		<div className="faq-container py-10 px-5">
+		<div
+			className="py-10 px-10 bg-contain bg-center bg-fixed"
+			style={{ backgroundImage: `url(${global_bg})` }}
+		>
 			<HeaderText text="FAQ's" />
 			<Accordion
 				type="single"

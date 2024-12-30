@@ -4,7 +4,7 @@ import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import MainLayout from "./MainLayout";
-import Tracks from "./Pages/Prize/Tracks";
+import Faq from "./Pages/FAQ/Faq";
 
 const router = createBrowserRouter([
 	{
@@ -13,7 +13,7 @@ const router = createBrowserRouter([
 	},
 	{
 		path: "/new",
-		element: <Tracks />,
+		element: <Faq />,
 	},
 ]);
 
