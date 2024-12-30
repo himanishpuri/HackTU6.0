@@ -10,20 +10,26 @@ import Sponsers from "./Pages/Sponsers/Sponsers";
 import Faq from "./Pages/FAQ/Faq";
 import AnotherPrize from "./Pages/Prize/AnotherPrize";
 
+import TwinklingBackground from "./TwinklingBackground";
+
 function MainLayout() {
 	return (
-		<div className="bg-[#0F203E] select-none">
+		<div className="select-none">
 			<NewNavbar />
-			<Landing />
-			<About />
-			<AnotherPrize />
-			<Tracks />
-			<Timeline />
-			{/* <Prize /> */}
-			<Gallery />
-			<Sponsers />
-			<Faq />
-			<Footer />
+			<TwinklingBackground backgroundColor="#192C4C">
+				<Landing />
+			</TwinklingBackground>
+			<TwinklingBackground backgroundColor="#0F203E">
+				<About />
+				<AnotherPrize />
+				<Tracks />
+				<Timeline />
+				{/* <Prize /> */}
+				<Gallery />
+				<Sponsers />
+				<Faq />
+				<Footer />
+			</TwinklingBackground>
 		</div>
 	);
 }

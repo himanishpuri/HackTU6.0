@@ -1,5 +1,4 @@
-import bg from "./Assets/landing_bg.png";
-import earth from "./Assets/earth_graphic.png";
+import earth from "./Assets/earth_graphic.webp";
 import logo from "./Assets/hacktu_text.png";
 
 import { LazyLoadImage } from "react-lazy-load-image-component";
@@ -8,10 +7,7 @@ import Timer from "./Component/Timer";
 
 function Landing() {
 	return (
-		<div
-			className="bg-contain bg-repeat bg-center h-screen w-full flex justify-between items-center gap-7 lg:mb-32"
-			style={{ backgroundImage: `url(${bg})` }}
-		>
+		<div className="h-screen w-full flex justify-between items-center gap-7">
 			<LazyLoadImage
 				src={earth}
 				alt="earth"

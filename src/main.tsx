@@ -5,6 +5,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import MainLayout from "./MainLayout";
 import Faq from "./Pages/FAQ/Faq";
+import TwinklingBackground from "./TwinklingBackground";
 
 const router = createBrowserRouter([
 	{
@@ -14,6 +15,14 @@ const router = createBrowserRouter([
 	{
 		path: "/new",
 		element: <Faq />,
+	},
+	{
+		path: "/trial",
+		element: (
+			<TwinklingBackground>
+				<MainLayout />
+			</TwinklingBackground>
+		),
 	},
 ]);
 
