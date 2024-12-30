@@ -68,7 +68,10 @@ const faqData = [
 
 const Faq = () => {
 	return (
-		<div className="py-10 px-10">
+		<div
+			id="faqs"
+			className="py-10 px-10"
+		>
 			<HeaderText text="FAQ's" />
 			<Accordion
 				type="single"

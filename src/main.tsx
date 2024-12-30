@@ -5,7 +5,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import MainLayout from "./MainLayout";
 import Faq from "./Pages/FAQ/Faq";
-import TwinklingBackground from "./TwinklingBackground";
+import PrizeCard from "./trial";
 
 const router = createBrowserRouter([
 	{
@@ -18,11 +18,7 @@ const router = createBrowserRouter([
 	},
 	{
 		path: "/trial",
-		element: (
-			<TwinklingBackground>
-				<MainLayout />
-			</TwinklingBackground>
-		),
+		element: <PrizeCard />,
 	},
 ]);
 

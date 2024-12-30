@@ -4,7 +4,10 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const About = () => {
 	return (
-		<div className="h-screen flex flex-col justify-center items-center gap-10">
+		<div
+			id="about"
+			className="h-screen flex flex-col justify-center items-center gap-10"
+		>
 			<HeaderText text="ABOUT HACKTU 6.0" />
 			<div className="flex justify-around items-center px-20 gap-20">
 				<p className="text-white text-justify text-[1.75vw] lg:text-lg flex-grow">

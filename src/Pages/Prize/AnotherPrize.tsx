@@ -6,7 +6,10 @@ import prize_bg from "./Assets/prizes.png";
 
 function AnotherPrize() {
 	return (
-		<div className="h-screen w-full flex flex-col justify-center items-center gap-16">
+		<div
+			id="prizes"
+			className="h-screen w-full flex flex-col justify-center items-center gap-16"
+		>
 			<HeaderText text="PRIZES" />
 			<LazyLoadImage
 				src={prize_bg}

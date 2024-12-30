@@ -8,7 +8,7 @@ interface TwinklingBackgroundProps {
 }
 
 const TwinklingBackground: React.FC<TwinklingBackgroundProps> = ({
-	numDots = 300,
+	numDots = 400,
 	backgroundColor = "#0F203E",
 	children,
 }) => {

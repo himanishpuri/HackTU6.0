@@ -5,7 +5,10 @@ import { imagesURL, placeholderImage } from "./GalleryImageData";
 
 const Gallery = () => {
 	return (
-		<div className="gallery-container bg-[#0F203E] mx-20">
+		<div
+			id="gallery"
+			className="gallery-container bg-[#0F203E] mx-20"
+		>
 			<HeaderText text="GALLERY" />
 			<div className="carousel">
 				{/* First row: Left to right */}

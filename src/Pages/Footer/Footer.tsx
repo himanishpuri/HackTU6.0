@@ -3,7 +3,7 @@ import { Mail, Facebook, Twitter, Instagram } from "lucide-react";
 
 function Footer() {
 	return (
-		<div className="bg-[#192c4c] pt-16">
+		<div className="pt-16">
 			<div
 				style={{ backgroundImage: `url(${curve})` }}
 				className="min-h-96 bg-cover bg-center p-[10dvw] flex flex-col items-center justify-center gap-4 font-inter font-normal text-white"
