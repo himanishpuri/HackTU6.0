@@ -27,6 +27,7 @@ const About = () => {
 					alt="about"
 					className="w-[40vw] max-h-[450px] object-cover hidden lg:block flex-grow-0"
 					visibleByDefault={true}
+					effect="blur"
 				/>
 			</div>
 		</div>
