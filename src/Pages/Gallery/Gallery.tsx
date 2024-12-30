@@ -1,8 +1,14 @@
 import HeaderText from "@/components/ui/HeaderText";
 import graphic from "./Assets/graphic.png";
 
+import p1 from "./Assets/DSC_0450.png"
+import p2 from "./Assets/DSC_0443 (1) (1).png"
+import p3 from "./Assets/DSC_0451.png"
+import p4 from "./Assets/DSC_0442.png"
+import p5 from "./Assets/DSC_0626.png"
+
 const Gallery = () => {
-	const images = [graphic, graphic, graphic, graphic, graphic]; // Replace these paths with your image paths
+	const images = [p1, p2, p3, p4, p5]; // Replace these paths with your image paths
 
 	return (
 		<div className="gallery-container bg-[#0F203E] mx-20">
