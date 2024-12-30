@@ -4,11 +4,16 @@ import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import MainLayout from "./MainLayout";
+import Tracks from "./Pages/Prize/Tracks";
 
 const router = createBrowserRouter([
 	{
 		path: "/",
 		element: <MainLayout />,
+	},
+	{
+		path: "/new",
+		element: <Tracks />,
 	},
 ]);
 

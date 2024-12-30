@@ -85,10 +85,10 @@ export default function NewNavbar() {
 						id="mlh-trust-badge"
 						style={{
 							display: "block",
-							maxWidth: "80px",
-							minWidth: "60px",
+							maxWidth: "70px",
+							minWidth: "50px",
 							position: "fixed",
-							right: "50px",
+							right: "20px",
 							top: "0",
 							width: "10%",
 							zIndex: 10000,

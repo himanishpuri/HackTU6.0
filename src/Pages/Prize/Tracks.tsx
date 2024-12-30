@@ -1,14 +1,21 @@
 import HeaderText from "@/components/ui/HeaderText";
 import track from "./Assets/tracks.png";
+import global_bg from "/global_bg.png";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 const Tracks = () => {
 	return (
-		<div className="bg-[#0F203E] justify-center items-center w-full flex flex-col py-5">
+		<div
+			style={{ backgroundImage: `url(${global_bg})` }}
+			className="bg-cover bg-center h-screen w-full flex flex-col justify-center items-center gap-20 pb-16"
+		>
 			<HeaderText text="TRACKS" />
-			<img
+			<LazyLoadImage
 				src={track}
-				className=" w-[69%] bg-[#0F203E] h-full"
-				alt=""
+				alt="tracks"
+				className="object-cover md:w-[60vw] w-[90vw]"
+				effect="blur"
 			/>
 		</div>
 	);
