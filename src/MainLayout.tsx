@@ -11,6 +11,7 @@ import Faq from "./Pages/FAQ/Faq";
 import AnotherPrize from "./Pages/Prize/AnotherPrize";
 
 import TwinklingBackground from "./TwinklingBackground";
+import Separator from "./Pages/Seperator";
 
 function MainLayout() {
 	return (
@@ -18,9 +19,25 @@ function MainLayout() {
 			<NewNavbar />
 			<TwinklingBackground>
 				<Landing />
+				<Separator
+					height="100px"
+					className="max-sm:-mt-28"
+				/>
 				<About />
+				<Separator
+					height="100px"
+					className="max-sm:-mt-72"
+				/>
 				<AnotherPrize />
+				<Separator
+					height="100px"
+					className="max-sm:-mt-64"
+				/>
 				<Tracks />
+				<Separator
+					height="100px"
+					className="max-sm:-mt-10"
+				/>
 				<Timeline />
 				{/* <Prize /> */}
 				<Gallery />

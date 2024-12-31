@@ -1,4 +1,4 @@
-import timelineElements from "./timelineElements";
+import { timelineElements } from "./timelineElements";
 import {
 	VerticalTimeline,
 	VerticalTimelineElement,

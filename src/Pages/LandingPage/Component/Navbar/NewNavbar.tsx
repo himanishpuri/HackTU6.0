@@ -34,7 +34,7 @@ export default function NewNavbar() {
 	const closeSidebar = () => setIsSidebarOpen(false);
 
 	return (
-		<header className="fixed flex z-50 w-full shrink-0 items-center py-5 px-12 backdrop-blur-lg bg-transparent text-white">
+		<header className="fixed flex z-50 w-full shrink-0 items-center py-5 px-8 backdrop-blur-lg bg-transparent text-white">
 			<Sheet
 				open={isSidebarOpen}
 				onOpenChange={setIsSidebarOpen}

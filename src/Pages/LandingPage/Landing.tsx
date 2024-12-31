@@ -26,7 +26,10 @@ function Landing() {
 					8-9th Feb 2025
 				</h1>
 				<div className="mt-10 flex flex-col gap-5">
-					<button className="font-space-grotesk hover:scale-105 transition-all font-light px-14 rounded-md py-3 bg-[#A0BED3]">
+					<button
+						className="font-space-grotesk hover:scale-105 transition-all font-light px-14 rounded-md py-3 bg-[#A0BED3]"
+						onClick={() => window.open("https://submit.ccstiet.com/")}
+					>
 						Register Now
 					</button>
 					<button className="font-space-grotesk hover:scale-105 transition-all font-light px-14 rounded-md py-3  border text-white border-white">

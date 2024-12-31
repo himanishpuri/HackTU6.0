@@ -1,4 +1,4 @@
-const timelineElements = [
+export const timelineElements = [
 	{
 		key: 1,
 		time: "10AM",
@@ -63,15 +63,6 @@ const timelineElements = [
 		description: "",
 	},
 	{
-		key: 8,
-		time: "11AM",
-		icon: "school",
-		title: "Hacking Time Elapsed",
-		buttonText: "Read More",
-		//   location: "",
-		description: "",
-	},
-	{
 		key: 9,
 		time: "12:30PM",
 		icon: "school",
@@ -82,5 +73,3 @@ const timelineElements = [
 	},
 	// More elements can be added here
 ];
-
-export default timelineElements;
