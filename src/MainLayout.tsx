@@ -16,10 +16,8 @@ function MainLayout() {
 	return (
 		<div className="select-none">
 			<NewNavbar />
-			<TwinklingBackground backgroundColor="#192C4C">
+			<TwinklingBackground>
 				<Landing />
-			</TwinklingBackground>
-			<TwinklingBackground backgroundColor="#0F203E">
 				<About />
 				<AnotherPrize />
 				<Tracks />

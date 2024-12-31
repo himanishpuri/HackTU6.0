@@ -28,16 +28,16 @@ const scrollToSection = (
 
 export default function NewNavbar() {
 	const navigate = useNavigate();
-	const [isSidebarOpen, setSidebarOpen] = useState(false); // State for sidebar visibility
+	const [isSidebarOpen, setIsSidebarOpen] = useState<boolean>(false); // State for sidebar visibility
 
 	// Function to close the sidebar
-	const closeSidebar = () => setSidebarOpen(false);
+	const closeSidebar = () => setIsSidebarOpen(false);
 
 	return (
-		<header className="fixed flex z-50 w-full shrink-0 items-center py-5 px-15 backdrop-blur-lg md:px-12 bg-transparent text-white">
+		<header className="fixed flex z-50 w-full shrink-0 items-center py-5 px-12 backdrop-blur-lg bg-transparent text-white">
 			<Sheet
 				open={isSidebarOpen}
-				onOpenChange={setSidebarOpen}
+				onOpenChange={setIsSidebarOpen}
 			>
 				{" "}
 				{/* Control sidebar open state */}
@@ -46,7 +46,7 @@ export default function NewNavbar() {
 						variant="outline"
 						size="icon"
 						className="lg:hidden bg-transparent p-2"
-						onClick={() => setSidebarOpen(true)}
+						onClick={() => setIsSidebarOpen(true)}
 					>
 						<img
 							src={menuLogo}

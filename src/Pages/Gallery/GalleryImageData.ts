@@ -7,4 +7,4 @@ export const imagesURL = [
 	"https://res.cloudinary.com/djahwsyyp/image/upload/v1735580180/hacktu/m2l6nv6uqpv3amt1gbg8.webp",
 ];
 
-export const placeholderImage = "./Assets/placeholder.png";
+export const placeholderImage = "./Assets/placeholder.webp";

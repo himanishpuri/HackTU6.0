@@ -8,14 +8,14 @@ const Sponsers = () => {
 	return (
 		<div
 			id="sponsors"
-			className="sponsers-container py-10 w-[80vw] mx-[10vw] flex justify-center items-center flex-col"
+			className="bg-transparent rounded-[8px] py-10 mx-[15vw] flex justify-center items-center flex-col"
 		>
 			<HeaderText text="SPONSERS" />
-			<div className="grid w-full gap-6 mt-10 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+			<div className="grid w-full gap-6 mt-10 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 max-sm:mt-10">
 				{sponsorData.map((sponsor, index) => (
 					<div
 						key={index + sponsor.company}
-						className="sponsor-card group relative overflow-hidden rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
+						className="group relative overflow-hidden rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 "
 					>
 						<LazyLoadImage
 							src={sponsor.image}
@@ -31,14 +31,6 @@ const Sponsers = () => {
 					</div>
 				))}
 			</div>
-
-			{/* Styles */}
-			<style>{`
-        .sponsers-container {
-			background: #0f203e;
-			color: white;
-			border-radius: 8px;
-        }`}</style>
 		</div>
 	);
 };

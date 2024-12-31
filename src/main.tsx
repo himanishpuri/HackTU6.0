@@ -5,7 +5,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import MainLayout from "./MainLayout";
 import Faq from "./Pages/FAQ/Faq";
-import PrizeCard from "./trial";
+import Sponsers from "./Pages/Sponsers/Sponsers";
 
 const router = createBrowserRouter([
 	{
@@ -18,7 +18,7 @@ const router = createBrowserRouter([
 	},
 	{
 		path: "/trial",
-		element: <PrizeCard />,
+		element: <Sponsers />,
 	},
 ]);
 

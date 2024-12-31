@@ -33,7 +33,7 @@ function Landing() {
 						Chekpoint 0
 					</button>
 				</div>
-				<div className="mt-7 flex gap-5 flex-col">
+				<div className="mt-7 flex gap-5 flex-col w-[80%]">
 					<Timer />
 				</div>
 			</div>
