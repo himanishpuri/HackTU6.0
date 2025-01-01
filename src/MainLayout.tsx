@@ -8,11 +8,11 @@ import Timeline from "./Pages/Timeline/Timeline";
 import Gallery from "./Pages/Gallery/Gallery";
 import Sponsers from "./Pages/Sponsers/Sponsers";
 import Faq from "./Pages/FAQ/Faq";
-// import AnotherPrize from "./Pages/Prize/AnotherPrize";
+import AnotherPrize from "./Pages/Prize/AnotherPrize";
 
 import TwinklingBackground from "./TwinklingBackground";
 import Separator from "./Pages/Seperator";
-import NewPrize from "./Pages/Prize/NewPrize";
+// import NewPrize from "./Pages/Prize/NewPrize";
 
 function MainLayout() {
 	return (
@@ -29,8 +29,8 @@ function MainLayout() {
 					height="100px"
 					className="max-sm:-mt-72"
 				/>
-				{/* <AnotherPrize /> */}
-				<NewPrize/>
+				<AnotherPrize />
+				{/* <NewPrize /> */}
 				<Separator
 					height="100px"
 					className="max-sm:-mt-64"
