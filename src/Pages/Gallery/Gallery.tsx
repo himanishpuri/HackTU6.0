@@ -1,5 +1,5 @@
 import HeaderText from "@/components/ui/HeaderText";
-import graphic from "./Assets/graphic.png";
+// import graphic from "./Assets/graphic.png";
 
 import p1 from "./Assets/DSC_0450.png"
 import p2 from "./Assets/DSC_0443 (1) (1).png"

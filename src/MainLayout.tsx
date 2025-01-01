@@ -8,7 +8,7 @@ import Timeline from "./Pages/Timeline/Timeline";
 import Gallery from "./Pages/Gallery/Gallery";
 import Sponsers from "./Pages/Sponsers/Sponsers";
 import Faq from "./Pages/FAQ/Faq";
-import AnotherPrize from "./Pages/Prize/AnotherPrize";
+// import AnotherPrize from "./Pages/Prize/AnotherPrize";
 
 import TwinklingBackground from "./TwinklingBackground";
 import NewPrize from "./Pages/Prize/NewPrize";
