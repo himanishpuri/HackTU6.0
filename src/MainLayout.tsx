@@ -21,8 +21,8 @@ function MainLayout() {
 			<TwinklingBackground>
 				<Landing />
 				<Separator
-					height="100px"
-					className="max-sm:-mt-28"
+					height="300px"
+					className="max-sm:-mt-28 md:my-10"
 				/>
 				<About />
 				<Separator

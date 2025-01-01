@@ -11,7 +11,7 @@ function Landing() {
 			<LazyLoadImage
 				src={earth}
 				alt="earth"
-				className="h-full w-1/2 object-contain lg:block hidden rotate-12"
+				className="h-full w-1/2 object-contain lg:block hidden"
 				effect="blur"
 				visibleByDefault={true}
 			/>
