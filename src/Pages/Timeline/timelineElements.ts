@@ -27,7 +27,7 @@ export const timelineElements = [
 		buttonText: "Read More",
 		//   location: "",
 		description:
-			"Jan 22nd Idea submission ends. Last day to submit Ideas at submit.cestiet.com",
+			"Jan 22nd Idea submission ends. Last day to submit Ideas at submit.ccstiet.com",
 	},
 	{
 		key: 4,
