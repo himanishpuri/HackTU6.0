@@ -125,7 +125,7 @@ export default function NewNavbar() {
 						<button
 							className="flex w-full items-center p-2 text-lg font-semibold hover:bg-[#192C4C] rounded-md duration-300"
 							onClick={() => {
-								window.open("https://submit.ccstiet.com/");
+								window.open("https://hacktu-6.devfolio.co/");
 								closeSidebar(); // Close the sidebar when the link is opened
 							}}
 						>
