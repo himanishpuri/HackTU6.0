@@ -11,6 +11,7 @@ import Faq from "./Pages/FAQ/Faq";
 import AnotherPrize from "./Pages/Prize/AnotherPrize";
 
 import TwinklingBackground from "./TwinklingBackground";
+import NewPrize from "./Pages/Prize/NewPrize";
 
 function MainLayout() {
 	return (
@@ -21,7 +22,8 @@ function MainLayout() {
 			</TwinklingBackground>
 			<TwinklingBackground backgroundColor="#0F203E">
 				<About />
-				<AnotherPrize />
+				{/* <AnotherPrize /> */}
+				<NewPrize/>
 				<Tracks />
 				<Timeline />
 				{/* <Prize /> */}
