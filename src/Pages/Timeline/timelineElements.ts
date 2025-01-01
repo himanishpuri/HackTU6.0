@@ -7,7 +7,7 @@ export const timelineElements = [
 		buttonText: "Read More",
 		//   location: "",
 		description:
-			"Excited for innovation? Tracks launch Jan 1. Gear up to create and solve real-world challenges!",
+			"Get ready to innovate! On January 1, we'll unveil the hackathon tracks, each designed to spark creativity and tackle real-world challenges. Gear up to choose your path and make a difference!",
 	},
 	{
 		key: 2,
@@ -17,7 +17,7 @@ export const timelineElements = [
 		buttonText: "Read More",
 		//   location: "",
 		description:
-			"Limited seats! Submit ideas early at submit.ccstiet.com. Results within 36 hours. Don’t miss HackTU!",
+			"Submit your innovative ideas early, as we have limited seats! We're reviewing submissions as they come in, and you'll be notified about your selection status within 36 hours. Don't miss your chance to join HackTU! submit.ccstiet.com",
 	},
 	{
 		key: 3,
@@ -27,7 +27,7 @@ export const timelineElements = [
 		buttonText: "Read More",
 		//   location: "",
 		description:
-			"Idea submissions close Jan 22. Submit now at submit.ccstiet.com.",
+			"Jan 22nd Idea submission ends. Last day to submit Ideas at submit.cestiet.com",
 	},
 	{
 		key: 4,
@@ -36,7 +36,8 @@ export const timelineElements = [
 		title: "Main HackTU 6.0 Day",
 		buttonText: "Read More",
 		//   location: "",
-		description: "Offline round at Thapar Institute, Patiala. See you there!",
+		description:
+			"This will be a Offline round! We look forward to welcoming you at Thapar Institute of Engineering and Technology, Patiala",
 	},
 	// {
 	// 	key: 5,

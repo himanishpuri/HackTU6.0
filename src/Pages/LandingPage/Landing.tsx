@@ -11,7 +11,7 @@ function Landing() {
 			<LazyLoadImage
 				src={earth}
 				alt="earth"
-				className="h-full w-1/2 object-contain lg:block hidden"
+				className="h-full w-1/2 object-contain lg:block hidden rotate-12"
 				effect="blur"
 				visibleByDefault={true}
 			/>
@@ -36,7 +36,7 @@ function Landing() {
 						className="font-space-grotesk hover:scale-105 transition-all font-light px-14 rounded-md py-3  border text-white border-white"
 						onClick={() => window.open("https://submit.ccstiet.com/")}
 					>
-						Checkpoint 0
+						Submit Idea
 					</button>
 				</div>
 				<div className="mt-7 flex gap-5 flex-col w-[80%]">
