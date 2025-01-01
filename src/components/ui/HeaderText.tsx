@@ -1,7 +1,7 @@
-interface headingProps {
+interface HeadingProps {
 	text: string;
 }
-const HeaderText = ({ text }: headingProps) => {
+const HeaderText = ({ text }: HeadingProps) => {
 	return (
 		<div className="flex justify-center items-center w-full pb-10 bg-transparent">
 			<h1 className="text-[7vw] text-[#D1FAE5] mt-[120px] font-extrabold tracking-normal absolute">

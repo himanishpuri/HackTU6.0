@@ -3,7 +3,7 @@ import NewTimeline from "./NewTimeline";
 
 const Timeline = () => {
 	return (
-		<div>
+		<div id="timeline">
 			<HeaderText text="TIMELINE" />
 			<NewTimeline />
 		</div>

@@ -4,8 +4,8 @@ import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import MainLayout from "./MainLayout";
-import Faq from "./Pages/FAQ/Faq";
-import TwinklingBackground from "./TwinklingBackground";
+import NotFound from "./NotFound";
+import NewPrize from "./Pages/Prize/NewPrize";
 
 const router = createBrowserRouter([
 	{
@@ -13,16 +13,12 @@ const router = createBrowserRouter([
 		element: <MainLayout />,
 	},
 	{
-		path: "/new",
-		element: <Faq />,
+		path: "/trial",
+		element: <NewPrize />,
 	},
 	{
-		path: "/trial",
-		element: (
-			<TwinklingBackground>
-				<MainLayout />
-			</TwinklingBackground>
-		),
+		path: "*",
+		element: <NotFound />,
 	},
 ]);
 

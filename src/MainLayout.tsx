@@ -11,20 +11,35 @@ import Faq from "./Pages/FAQ/Faq";
 // import AnotherPrize from "./Pages/Prize/AnotherPrize";
 
 import TwinklingBackground from "./TwinklingBackground";
+import Separator from "./Pages/Seperator";
 import NewPrize from "./Pages/Prize/NewPrize";
 
 function MainLayout() {
 	return (
 		<div className="select-none">
 			<NewNavbar />
-			<TwinklingBackground backgroundColor="#192C4C">
+			<TwinklingBackground>
 				<Landing />
-			</TwinklingBackground>
-			<TwinklingBackground backgroundColor="#0F203E">
+				<Separator
+					height="100px"
+					className="max-sm:-mt-28"
+				/>
 				<About />
+				<Separator
+					height="100px"
+					className="max-sm:-mt-72"
+				/>
 				{/* <AnotherPrize /> */}
 				<NewPrize/>
+				<Separator
+					height="100px"
+					className="max-sm:-mt-64"
+				/>
 				<Tracks />
+				<Separator
+					height="100px"
+					className="max-sm:-mt-10"
+				/>
 				<Timeline />
 				{/* <Prize /> */}
 				<Gallery />
