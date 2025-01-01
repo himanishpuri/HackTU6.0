@@ -10,7 +10,7 @@ const About = () => {
 		>
 			<HeaderText text="ABOUT HACKTU 6.0" />
 			<div className="flex justify-around items-center lg:px-20 gap-20">
-				<p className="text-white text-justify text-[3vw] md:text-lg flex-grow px-5 lg:pl-40">
+				<p className="text-white text-justify text-[3vw] md:text-lg flex-grow px-10 lg:px-0">
 					Creative Computing Society is back with HackTU, flagship event to
 					be hosted at Thapar Institute of Engineering and Technology,
 					Patiala and we're excited to see what new and exciting ideas will

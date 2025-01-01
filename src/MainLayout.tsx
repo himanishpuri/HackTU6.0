@@ -22,7 +22,7 @@ function MainLayout() {
 				<Landing />
 				<Separator
 					height="300px"
-					className="max-sm:-mt-28 md:my-10"
+					className="max-sm:-mt-28 md:my-64"
 				/>
 				<About />
 				<Separator
