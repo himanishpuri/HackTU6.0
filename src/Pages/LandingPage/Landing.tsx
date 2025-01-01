@@ -32,7 +32,10 @@ function Landing() {
 					>
 						Register Now
 					</button>
-					<button className="font-space-grotesk hover:scale-105 transition-all font-light px-14 rounded-md py-3  border text-white border-white">
+					<button
+						className="font-space-grotesk hover:scale-105 transition-all font-light px-14 rounded-md py-3  border text-white border-white"
+						onClick={() => window.open("https://submit.ccstiet.com/")}
+					>
 						Chekpoint 0
 					</button>
 				</div>
