@@ -28,7 +28,7 @@ function Landing() {
 				<div className="mt-10 flex flex-col gap-5">
 					<button
 						className="font-space-grotesk hover:scale-105 transition-all font-light px-14 rounded-md py-3 bg-[#A0BED3]"
-						onClick={() => window.open("https://submit.ccstiet.com/")}
+						onClick={() => window.open("https://hacktu-6.devfolio.co/")}
 					>
 						Register Now
 					</button>
@@ -36,7 +36,7 @@ function Landing() {
 						className="font-space-grotesk hover:scale-105 transition-all font-light px-14 rounded-md py-3  border text-white border-white"
 						onClick={() => window.open("https://submit.ccstiet.com/")}
 					>
-						Chekpoint 0
+						Checkpoint 0
 					</button>
 				</div>
 				<div className="mt-7 flex gap-5 flex-col w-[80%]">

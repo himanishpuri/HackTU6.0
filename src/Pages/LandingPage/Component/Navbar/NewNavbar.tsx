@@ -164,8 +164,8 @@ export default function NewNavbar() {
 					text="REGISTER"
 					className="bg-[#192C4C] hover:bg-blue-100  hover:text-[#192C4C] rounded-2xl px-7 mr-20 border-white border"
 					onClick={() => {
-						window.open("https://submit.ccstiet.com/");
 						closeSidebar(); // Close the sidebar when the link is opened
+						window.open("https://hacktu-6.devfolio.co/");
 					}}
 				/>
 				<div>
