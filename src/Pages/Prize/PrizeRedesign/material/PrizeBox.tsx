@@ -5,7 +5,6 @@ interface PrizeBoxProps {
 	imgSrc: string;
 	title: string;
 	prizeMoney: string;
-	borderColor?: string;
 	className?: string;
 }
 
@@ -13,12 +12,11 @@ function PrizeBox({
 	imgSrc,
 	title,
 	prizeMoney,
-	borderColor = "#D1FAE5",
 	className = "",
 }: Readonly<PrizeBoxProps>): JSX.Element {
 	return (
 		<div
-			className={`w-44 h-44 rounded-lg bg-black/25 border border-[${borderColor}] flex flex-col flex-grow-0 flex-shrink-0 justify-start items-center ${className}`}
+			className={`w-44 h-44 rounded-lg bg-black/25 border flex flex-col flex-grow-0 flex-shrink-0 justify-start items-center hover:scale-110 duration-300 ${className}`}
 		>
 			<LazyLoadImage
 				src={imgSrc}
@@ -31,7 +29,7 @@ function PrizeBox({
 				{title}
 			</h3>
 			<h2 className="font-tilt_warp text-[#D1FAE5] text-4xl flex-grow">
-				{prizeMoney}
+				&#8377; {prizeMoney}
 			</h2>
 		</div>
 	);

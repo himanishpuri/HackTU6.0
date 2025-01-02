@@ -2,7 +2,7 @@ import NewNavbar from "./Pages/LandingPage/Component/Navbar/NewNavbar";
 import Landing from "./Pages/LandingPage/Landing";
 import Footer from "./Pages/Footer/Footer";
 // import Prize from "./Pages/Prize/Prize";
-import Tracks from "./Pages/Prize/Tracks";
+// import Tracks from "./Pages/Tracks/Tracks";
 import About from "./Pages/About/About";
 import Timeline from "./Pages/Timeline/Timeline";
 import Gallery from "./Pages/Gallery/Gallery";
@@ -13,6 +13,7 @@ import Faq from "./Pages/FAQ/Faq";
 import TwinklingBackground from "./TwinklingBackground";
 import Separator from "./Pages/Seperator";
 import PrizeRedesign from "./Pages/Prize/PrizeRedesign/PrizeRedesign";
+import NewTracks from "./Pages/Tracks/NewTracks";
 // import NewPrize from "./Pages/Prize/NewPrize";
 
 function MainLayout() {
@@ -34,13 +35,13 @@ function MainLayout() {
 				{/* <NewPrize /> */}
 				<PrizeRedesign />
 				<Separator
-					height="200px"
-					className="max-sm:-mt-20"
+					height="300px"
+					className="max-sm:mt-16"
 				/>
-				<Tracks />
+				<NewTracks />
 				<Separator
-					height="100px"
-					className="max-sm:-mt-10"
+					height="200px"
+					className="max-sm:mt-16"
 				/>
 				<Timeline />
 				{/* <Prize /> */}
