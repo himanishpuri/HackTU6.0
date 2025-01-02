@@ -41,7 +41,7 @@ function NewTracks() {
 								className={`${styles.cardWrapper} ${styleClass}`}
 								key={track.title}
 								style={{
-									transform: `translateX(${offset * 250}px) scale(${
+									transform: `translateX(${offset * 270}px) scale(${
 										1 - Math.abs(offset) * 0.2
 									})`,
 									opacity: Math.max(0.6, 1 - Math.abs(offset) * 0.4),
