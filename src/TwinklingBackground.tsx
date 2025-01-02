@@ -57,7 +57,7 @@ const TwinklingBackground: React.FC<TwinklingBackgroundProps> = ({
 	}, [numDots]);
 
 	return (
-		<div className="relative w-full h-full">
+		<div className="relative w-full h-screen">
 			{/* Background Layer */}
 			<div
 				ref={containerRef}

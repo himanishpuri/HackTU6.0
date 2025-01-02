@@ -8,10 +8,11 @@ import Timeline from "./Pages/Timeline/Timeline";
 import Gallery from "./Pages/Gallery/Gallery";
 import Sponsers from "./Pages/Sponsers/Sponsers";
 import Faq from "./Pages/FAQ/Faq";
-import AnotherPrize from "./Pages/Prize/AnotherPrize";
+// import AnotherPrize from "./Pages/Prize/AnotherPrize";
 
 import TwinklingBackground from "./TwinklingBackground";
 import Separator from "./Pages/Seperator";
+import PrizeRedesign from "./Pages/Prize/PrizeRedesign/PrizeRedesign";
 // import NewPrize from "./Pages/Prize/NewPrize";
 
 function MainLayout() {
@@ -27,13 +28,14 @@ function MainLayout() {
 				<About />
 				<Separator
 					height="100px"
-					className="max-sm:-mt-72"
+					className="max-sm:-mt-20"
 				/>
-				<AnotherPrize />
+				{/* <AnotherPrize /> */}
 				{/* <NewPrize /> */}
+				<PrizeRedesign />
 				<Separator
-					height="100px"
-					className="max-sm:-mt-64"
+					height="200px"
+					className="max-sm:-mt-20"
 				/>
 				<Tracks />
 				<Separator

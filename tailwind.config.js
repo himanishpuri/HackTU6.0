@@ -19,7 +19,13 @@ export default {
 				md: "calc(var(--radius) - 2px)",
 				sm: "calc(var(--radius) - 4px)",
 			},
-			colors: {},
+			colors: {
+				"dark-blue": "#004466", // Dark blue
+				"teal-400": "#70d1c8", // Light teal
+			},
+			screens: {
+				xs: "415px",
+			},
 			keyframes: {
 				"accordion-down": {
 					from: {
@@ -41,6 +47,9 @@ export default {
 			animation: {
 				"accordion-down": "accordion-down 0.2s ease-out",
 				"accordion-up": "accordion-up 0.2s ease-out",
+			},
+			boxShadow: {
+				"slab-shadow": "rgba(0, 0, 0, 0.15) 10px 5.95px 7.6px",
 			},
 		},
 	},

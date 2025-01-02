@@ -5,7 +5,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import MainLayout from "./MainLayout";
 import NotFound from "./NotFound";
-import NewPrize from "./Pages/Prize/NewPrize";
+import PrizeRedesign from "./Pages/Prize/PrizeRedesign/PrizeRedesign";
 
 const router = createBrowserRouter([
 	{
@@ -14,7 +14,7 @@ const router = createBrowserRouter([
 	},
 	{
 		path: "/trial",
-		element: <NewPrize />,
+		element: <PrizeRedesign />,
 	},
 	{
 		path: "*",
