@@ -13,6 +13,7 @@ export default {
 				inter: ["Inter", "sans-serif"],
 				tilt_warp: ["Tilt Warp", "sans-serif"],
 				space_grotesx: ["Space Grotesk", "sans-serif"],
+				raleway: ["Raleway", "sans-serif"],
 			},
 			borderRadius: {
 				lg: "var(--radius)",

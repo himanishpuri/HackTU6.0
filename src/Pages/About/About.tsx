@@ -8,7 +8,7 @@ const About = () => {
 			id="about"
 			className="h-screen flex flex-col justify-center items-center gap-10"
 		>
-			<HeaderText text="ABOUT HACKTU 6.0" />
+			<HeaderText text="ABOUT" />
 			<div className="flex justify-around items-center lg:px-20 gap-20">
 				<p className="text-white text-justify text-[3vw] md:text-lg flex-grow px-10 lg:px-0">
 					Creative Computing Society is back with HackTU, flagship event to

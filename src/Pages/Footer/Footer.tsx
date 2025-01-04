@@ -1,5 +1,7 @@
 import curve from "./Assets/footer_arc.png";
 import { Mail, Linkedin, Instagram } from "lucide-react";
+import Whatsapp from "./Assets/whatsappLogo.svg";
+import Discord from "./Assets/discordLogo.svg";
 
 function Footer() {
 	return (
@@ -57,6 +59,33 @@ function Footer() {
 							)
 						}
 					/>
+					<button
+						onClick={() =>
+							window.open(
+								"https://chat.whatsapp.com/EtnVilV3G8XASRebd5envq",
+							)
+						}
+						className="h-6 w-6 flex-shrink-0 flex-grow-0"
+						aria-label="Open Whatsapp"
+					>
+						<img
+							src={Whatsapp}
+							alt="Whatsapp"
+							className="h-6 w-6"
+						/>
+					</button>
+
+					<button
+						onClick={() => window.open("https://discord.gg/YjK6D4sJNC")}
+						className="h-6 w-6 flex-shrink-0 flex-grow-0"
+						aria-label="Open Discord"
+					>
+						<img
+							src={Discord}
+							alt="Discord"
+							className="h-6 w-6"
+						/>
+					</button>
 				</div>
 				<div>
 					<h1 className="text-center text-sm">
