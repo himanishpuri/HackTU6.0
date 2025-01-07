@@ -33,6 +33,7 @@ export const sponsorData = [
 		company: "StandOut Stickers",
 		info: "Community Partners",
 		image: "https://res.cloudinary.com/djahwsyyp/image/upload/f_auto,q_auto/v1/hacktu/k4ycag4j5v8dyi5qsgpl",
+		onclick: "http://hackp.ac/mlh-StandOutStickers-hackathons",
 	},
 	{
 		company: "Polygon",

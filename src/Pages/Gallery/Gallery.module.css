@@ -30,9 +30,10 @@
 	animation-fill-mode: both;
 }
 
+/* 
 .carouselRow:hover {
 	animation-play-state: paused;
-}
+} */
 
 .carouselImage {
 	width: clamp(175px, 30vw, 300px);
@@ -41,6 +42,7 @@
 	object-fit: cover;
 	border-radius: 20px;
 	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+	background-color: #918a8a;
 }
 
 /* @media (max-width: 768px) {

@@ -32,14 +32,16 @@ const Gallery = () => {
 
 				<div className={`${styles.carouselRow} ${styles.rightToLeft}`}>
 					{imagesURLone.concat(imagesURLtwo).map((src, index) => (
-						<LazyLoadImage
-							key={`ltr-${index + src}`}
-							src={src}
-							alt={`GalleryImage${index + 1}`}
-							className={styles.carouselImage}
-							effect="blur"
-							placeholderSrc={placeholderImage}
-						/>
+						<div key={`ltr-${index + src}`}>
+							<LazyLoadImage
+								
+								src={src}
+								alt={`GalleryImage${index + 1}`}
+								className={styles.carouselImage}
+								effect="blur"
+								placeholderSrc={placeholderImage}
+							/>
+						</div>
 					))}
 				</div>
 			</div>

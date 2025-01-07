@@ -15,7 +15,7 @@ const Sponsers = () => {
 				{sponsorData.map((sponsor, index) => (
 					<div
 						key={index + sponsor.company}
-						className="group relative overflow-hidden rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 "
+						className="group relative overflow-hidden rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 bg-slate-400/80"
 					>
 						<LazyLoadImage
 							src={sponsor.image}
@@ -23,11 +23,20 @@ const Sponsers = () => {
 							className="w-full h-64 p-5 object-contain group-hover:scale-110 transition-transform duration-300 bg-slate-400/80"
 							effect="blur"
 						/>
-						<div className="info-overlay absolute inset-0 bg-black bg-opacity-70 opacity-0 group-hover:opacity-100 flex flex-col justify-center items-center text-white text-center p-4 transition-opacity duration-300">
+						<button
+							className="info-overlay absolute inset-0 bg-black bg-opacity-70 opacity-0 group-hover:opacity-100 flex flex-col justify-center items-center text-white text-center p-4 transition-opacity duration-300"
+							onClick={() =>
+								sponsor.onclick && window.open(sponsor.onclick)
+							}
+						>
 							<h3 className="text-lg font-bold">{sponsor.company}</h3>
 							<p className="text-sm">{sponsor.info}</p>
-							{/* <span className="mt-2 text-xs italic">{sponsor.name}</span> */}
-						</div>
+							{sponsor.onclick && (
+								<p className="italic underline absolute bottom-5">
+									Go to Site
+								</p>
+							)}
+						</button>
 					</div>
 				))}
 			</div>
