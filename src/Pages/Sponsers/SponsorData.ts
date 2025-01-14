@@ -50,4 +50,22 @@ export const sponsorData = [
 		info: "Community Partners",
 		image: "https://res.cloudinary.com/djahwsyyp/image/upload/f_auto,q_auto/v1/hacktu/o1eq6qdcdkdznuk7q3up",
 	},
-];
+	{
+		company: "Commudle",
+		info: "Community Partners",
+		image: "https://res.cloudinary.com/djahwsyyp/image/upload/f_auto,q_auto/u3m9v44gvzxvj08nzdpo",
+	},
+	{
+		company: "theDevArmy",
+		info: "Community Partners",
+		image: "https://res.cloudinary.com/djahwsyyp/image/upload/f_auto,q_auto/vzazhtfx9skrpd2k48cg",
+		onclick: "https://thedevarmy.com/",
+	},
+] as Sponsor[];
+
+interface Sponsor {
+	company: string;
+	info: string;
+	image: string;
+	onclick?: string;
+}
