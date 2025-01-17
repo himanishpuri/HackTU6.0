@@ -6,7 +6,10 @@ import {
 	AccordionTrigger,
 } from "@/components/ui/accordion";
 
-const faqData = [
+const faqData: {
+	question: string;
+	answer: string;
+}[] = [
 	{
 		question: "What is a Hackathon?",
 		answer:
@@ -51,6 +54,12 @@ const faqData = [
 			"I've already applied but my application status is still pending",
 		answer:
 			"Be patient, we've got so many registrations, we are still in the process of accepting teams, just hold on for some time.",
+	},
+	{
+		question:
+			"Can I use a project that was previously built for a hackathon?",
+		answer:
+			"No, you cannot use a project that was previously built. All hackathon projects must be created from scratch during the event's timeline to ensure fairness and creativity. Additionally, all participants must comply with the MLH Code of Conduct to maintain a positive and inclusive environment.",
 	},
 	{
 		question: "What if I feel sleepy during the Hackathon?",
