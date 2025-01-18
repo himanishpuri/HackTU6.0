@@ -76,7 +76,9 @@ function Footer() {
 					</button>
 
 					<button
-						onClick={() => window.open("https://discord.gg/YjK6D4sJNC")}
+						onClick={() =>
+							window.open("https://discord.com/invite/zs76SWNAw8")
+						}
 						className="h-6 w-6 flex-shrink-0 flex-grow-0"
 						aria-label="Open Discord"
 					>
