@@ -61,6 +61,11 @@ export const sponsorData = [
 		image: "https://res.cloudinary.com/djahwsyyp/image/upload/f_auto,q_auto/vzazhtfx9skrpd2k48cg",
 		onclick: "https://thedevarmy.com/",
 	},
+	{
+		company: "Plum",
+		info: "Community Partners",
+		image: "https://res.cloudinary.com/dc1tl4hol/image/upload/f_auto,q_auto/bfzflacb4onm67d1kpne",
+	}
 ] as Sponsor[];
 
 interface Sponsor {
