@@ -2,12 +2,12 @@ export const sponsorData = [
 	{
 		company: "Servosys",
 		info: "Power Partner",
-		image: "https://res.cloudinary.com/djahwsyyp/image/upload/f_auto,q_auto/v1/hacktu/oeghjc2v41icletcpkcx",
+		image: "https://res.cloudinary.com/dagyjqo2i/image/upload/f_auto,q_auto/v1/hacktu/uc608lwzlqqdkqoviofs",
 	},
 	{
 		company: "MLH",
 		info: "Hackathon Partner",
-		image: "https://res.cloudinary.com/djahwsyyp/image/upload/f_auto,q_auto/v1/hacktu/bx6lisjjn84ya8arss2q",
+		image: "https://res.cloudinary.com/dagyjqo2i/image/upload/f_auto,q_auto/v1/hacktu/wd91muzilrwoowdgwouh",
 	},
 	{
 		company: "Plum",
@@ -17,53 +17,53 @@ export const sponsorData = [
 	{
 		company: "EOI Loans",
 		info: "Associate Partner",
-		image: "https://res.cloudinary.com/djahwsyyp/image/upload/f_auto,q_auto/v1/hacktu/hclrauwrptaipedept4a",
+		image: "https://res.cloudinary.com/dagyjqo2i/image/upload/f_auto,q_auto/v1/hacktu/jmifcymxrpkr7zwahcev",
 	},
 	{
 		company: "Certopus",
 		info: "Associate Partner",
-		image: "https://res.cloudinary.com/djahwsyyp/image/upload/f_auto,q_auto/v1/hacktu/jbmtiruz6crp36jc2dnc",
+		image: "https://res.cloudinary.com/dagyjqo2i/image/upload/f_auto,q_auto/v1/hacktu/frtu4kk5czcwy6lijvtb",
 	},
 	{
 		company: "Devfolio",
 		info: "Community Partner",
-		image: "https://res.cloudinary.com/djahwsyyp/image/upload/f_auto,q_auto/v1/hacktu/gayruobmi5drbeih0f47",
+		image: "https://res.cloudinary.com/dagyjqo2i/image/upload/f_auto,q_auto/v1/hacktu/esftrd12ulhe4hdaciy0",
 	},
 	{
 		company: "GitHub",
 		info: "Community Partner",
-		image: "https://res.cloudinary.com/djahwsyyp/image/upload/f_auto,q_auto/v1/hacktu/tk0e3u1crv7kwfu8fpze",
+		image: "https://res.cloudinary.com/dagyjqo2i/image/upload/f_auto,q_auto/v1/hacktu/hip0glk3sayvosphducy",
 	},
 	{
 		company: "StandOut Stickers",
 		info: "Community Partner",
-		image: "https://res.cloudinary.com/djahwsyyp/image/upload/f_auto,q_auto/v1/hacktu/k4ycag4j5v8dyi5qsgpl",
+		image: "https://res.cloudinary.com/dagyjqo2i/image/upload/f_auto,q_auto/v1/hacktu/zrzt59avkdxiaq9tkok2",
 		onclick: "http://hackp.ac/mlh-StandOutStickers-hackathons",
 	},
 	{
 		company: "Polygon",
 		info: "Community Partner",
-		image: "https://res.cloudinary.com/djahwsyyp/image/upload/f_auto,q_auto/v1/hacktu/jvxpukbfs91upwy00ybd",
+		image: "https://res.cloudinary.com/dagyjqo2i/image/upload/f_auto,q_auto/v1/hacktu/gsxteekngtlebqmgcx8u",
 	},
 	{
 		company: "ETH India",
 		info: "Community Partner",
-		image: "https://res.cloudinary.com/djahwsyyp/image/upload/f_auto,q_auto/v1/hacktu/t3fknrtyrpdq8pag6fty",
+		image: "https://res.cloudinary.com/dagyjqo2i/image/upload/f_auto,q_auto/v1/hacktu/ne3a8g6pchnrkbauoubt",
 	},
 	{
 		company: "Aptos",
 		info: "Community Partner",
-		image: "https://res.cloudinary.com/djahwsyyp/image/upload/f_auto,q_auto/v1/hacktu/o1eq6qdcdkdznuk7q3up",
+		image: "https://res.cloudinary.com/dagyjqo2i/image/upload/f_auto,q_auto/v1/hacktu/wzhwf5ifkpvyzbaldyw1",
 	},
 	{
 		company: "Commudle",
 		info: "Community Partner",
-		image: "https://res.cloudinary.com/djahwsyyp/image/upload/f_auto,q_auto/u3m9v44gvzxvj08nzdpo",
+		image: "https://res.cloudinary.com/dagyjqo2i/image/upload/f_auto,q_auto/v1/hacktu/nsfvsaqjnp8km81eiuko",
 	},
 	{
 		company: "theDevArmy",
 		info: "Community Partner",
-		image: "https://res.cloudinary.com/djahwsyyp/image/upload/f_auto,q_auto/vzazhtfx9skrpd2k48cg",
+		image: "https://res.cloudinary.com/dagyjqo2i/image/upload/f_auto,q_auto/v1/hacktu/oxyaes6em6ty82gqemdx",
 		onclick: "https://thedevarmy.com/",
 	},
 ] as Sponsor[];

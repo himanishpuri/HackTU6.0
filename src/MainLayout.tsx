@@ -5,7 +5,7 @@ import Footer from "./Pages/Footer/Footer";
 // import Tracks from "./Pages/Tracks/Tracks";
 import About from "./Pages/About/About";
 import Timeline from "./Pages/Timeline/Timeline";
-import Gallery from "./Pages/Gallery/Gallery";
+// import Gallery from "./Pages/Gallery/Gallery";
 import Sponsers from "./Pages/Sponsers/Sponsers";
 import Faq from "./Pages/FAQ/Faq";
 // import AnotherPrize from "./Pages/Prize/AnotherPrize";
@@ -45,7 +45,7 @@ function MainLayout() {
 				/>
 				<Timeline />
 				{/* <Prize /> */}
-				<Gallery />
+				{/* <Gallery /> */}
 				<Sponsers />
 				<Faq />
 				<Footer />
