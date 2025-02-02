@@ -1,8 +1,18 @@
 export const sponsorData = [
 	{
+		company: "Indus One",
+		info: "Title Sponsor",
+		image: "https://res.cloudinary.com/dc1tl4hol/image/upload/f_auto,q_auto/obzmf4g5ycibkrynz8z5",
+	},
+	{
 		company: "Servosys",
 		info: "Power Partner",
 		image: "https://res.cloudinary.com/dagyjqo2i/image/upload/f_auto,q_auto/v1/hacktu/uc608lwzlqqdkqoviofs",
+	},
+	{
+		company: "ICICI",
+		info: "Power Partner",
+		image: "https://res.cloudinary.com/dc1tl4hol/image/upload/f_auto,q_auto/n3elyxrh19xcamk1lvgr",
 	},
 	{
 		company: "MLH",
@@ -13,6 +23,11 @@ export const sponsorData = [
 		company: "Plum",
 		info: "Gifting Partner",
 		image: "https://res.cloudinary.com/drvoynt07/image/upload/f_auto,q_auto/wthm2uyqmhjsoxkzfyfw",
+	},
+	{
+		company: "Devdock",
+		info: "Associate Partner",
+		image: "https://res.cloudinary.com/dc1tl4hol/image/upload/f_auto,q_auto/rmolu4chml5dwdpvu2sc",
 	},
 	{
 		company: "EOI Loans",
@@ -65,6 +80,16 @@ export const sponsorData = [
 		info: "Community Partner",
 		image: "https://res.cloudinary.com/dagyjqo2i/image/upload/f_auto,q_auto/v1/hacktu/oxyaes6em6ty82gqemdx",
 		onclick: "https://thedevarmy.com/",
+	},
+	{
+		company: "Echoes",
+		info: "Community Partner",
+		image: "https://res.cloudinary.com/dc1tl4hol/image/upload/f_auto,q_auto/w4c9d8xrtw1hnxfsfncp",
+	},
+	{
+		company: "Sur",
+		info: "Community Partner",
+		image: "https://res.cloudinary.com/dc1tl4hol/image/upload/f_auto,q_auto/lmsvdysa7yfw1g3649v7",
 	},
 ] as Sponsor[];
 
