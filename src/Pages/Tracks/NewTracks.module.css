@@ -1,78 +1,160 @@
 .slider {
-	position: relative;
-	width: 100%;
-	height: 31rem;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	overflow: hidden;
+    position: relative;
+    width: 100%;
+    max-width: 1400px;
+    height: 32rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    perspective: 1000px;
 }
 
 .cardsContainer {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	position: relative;
-	width: 100%;
-	height: 100%;
-	transition: transform 0.5s ease-in-out;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .cardWrapper {
-	position: absolute;
-	transition: transform 0.5s, opacity 0.5s;
-	perspective: 1000px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* CRITICAL FIX: Center the inner content */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transform: translate(-50%, -50%) scale(0.5);
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out, z-index 0s linear 0.25s;
+    opacity: 0;
+    z-index: 0;
+    pointer-events: none;
+}
+
+/* Active Card (Center) */
+.active {
+    opacity: 1;
+    z-index: 10;
+    transform: translate(-50%, -50%) scale(1);
+    pointer-events: auto;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+/* Previous Card (Left) */
+.prev {
+    opacity: 0.6;
+    z-index: 5;
+    transform: translate(calc(-50% - 18rem), -50%) scale(0.85);
+    pointer-events: none;
+    filter: blur(1px);
+}
+
+/* Next Card (Right) */
+.next {
+    opacity: 0.6;
+    z-index: 5;
+    transform: translate(calc(-50% + 18rem), -50%) scale(0.85);
+    pointer-events: none;
+    filter: blur(1px);
 }
 
 .hidden {
-	display: none;
+    opacity: 0;
+    z-index: -1;
+    transform: translate(-50%, -50%) scale(0.5);
 }
 
-.active {
-	z-index: 2;
-	transform: translateX(0px) scale(1);
-	opacity: 1;
+/* Navigation Buttons */
+.navButton {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.4);
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 20;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s, transform 0.2s;
 }
 
-.prev {
-	z-index: 1;
-	transform: translateX(-150px) scale(0.8);
-	opacity: 0.6;
-}
-
-.next {
-	z-index: 1;
-	transform: translateX(150px) scale(0.8);
-	opacity: 0.6;
-}
-
-.prevButton,
-.nextButton {
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
-	background: none;
-	border: none;
-	color: white;
-	background-color: rgba(0, 0, 0, 0.3);
-	font-size: 2rem;
-	cursor: pointer;
-	opacity: 0.9;
-	transition: opacity 0.3s;
-	/* height: 10; */
-	border-radius: 50%;
-	z-index: 1000;
-}
-
-.prevButton:hover,
-.nextButton:hover {
-	opacity: 1;
+.navButton:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-50%) scale(1.1);
 }
 
 .prevButton {
-	left: 20px;
+    left: 2rem;
 }
 
 .nextButton {
-	right: 20px;
+    right: 2rem;
+}
+
+/* --- Mobile / Tablet Responsiveness --- */
+
+@media (max-width: 1024px) {
+    /* Tighten the spread on tablets */
+    .prev {
+        transform: translate(calc(-50% - 14rem), -50%) scale(0.8);
+    }
+    .next {
+        transform: translate(calc(-50% + 14rem), -50%) scale(0.8);
+    }
+}
+
+@media (max-width: 768px) {
+    .slider {
+        height: 30rem;
+    }
+
+    /* Mobile: Peek from behind */
+    .prev {
+        transform: translate(calc(-50% - 130%), -50%) scale(0.75);
+        opacity: 0.5;
+        z-index: 4;
+    }
+
+    .next {
+        transform: translate(calc(-50% + 130%), -50%) scale(0.75);
+        opacity: 0.5;
+        z-index: 4;
+    }
+
+    .active {
+        width: 100%;
+        max-width: 18rem;
+    }
+
+    .navButton {
+        background: transparent;
+    }
+
+    .prevButton {
+        left: 0.5rem;
+    }
+
+    .nextButton {
+        right: 0.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Small screens: Stack them behind to avoid clutter */
+    .prev {
+        transform: translate(-50%, -50%) scale(0.8);
+        opacity: 0;
+    }
+    .next {
+        transform: translate(-50%, -50%) scale(0.8);
+        opacity: 0;
+    }
 }

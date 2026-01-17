@@ -2,111 +2,110 @@
 
 /* Container for the entire timeline */
 .timeline-container {
-    padding: 2rem;
-    max-width: 800px;
-    margin: 0 auto;
-  }
-  
-  /* Title of the timeline */
-  .title {
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 2rem;
-  }
-  
-  /* Styling the timeline wrapper */
-  .timeline {
-    position: relative;
-    padding-left: 30px;
-    margin-left: 30px;
-  }
-  
-  /* A pseudo-element for the vertical line */
-  .timeline:before {
-    content: '';
-    position: absolute;
-    left: 30px;
-    top: 0;
-    bottom: 0;
-    width: 2px;
-    background-color: #ccc;
-  }
-  
-  /* Styling for each timeline element */
-  .timeline-element {
-    position: relative;
-    margin-bottom: 38px;
-  }
-  
-  /* The circular icon (could be any content) */
-  .timeline-icon {
-    position: absolute;
-    left: -20px;
-    top: 0;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-size: 20px;
-  }
-  
-  /* Content to the right of the timeline icon */
-  .timeline-content {
-    width: fit-content;
-    margin-left: 60px;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    /* background-color: #f9f9f9; */
-    /* background-color: #495a85; */
-    background-image: linear-gradient(to bottom, #5fffdf, #4590a9);
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
 
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Title of each timeline item */
-  .timeline-title {
-    font-size: 1.5rem;
-    margin: 0;
-    color: #333;
-  }
-  
-  /* Subtitle of each timeline item */
-  .timeline-subtitle {
-    font-size: 1.2rem;
-    color: #777;
-    margin-bottom: 10px;
-  }
-  
-  /* Description of the timeline event */
-  .timeline-description {
-    font-size: 1rem;
-    color: #555;
-  }
-  
-  /* Button styles */
-  .button {
-    margin-top: 15px;
-    display: inline-block;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-  }
-  
-  .workButton {
-    background-color: #06D6A0;
-    color: white;
-  }
-  
-  .schoolButton {
-    background-color: #f9c74f;
-    color: white;
-  }
-  
-  .button:hover {
-    opacity: 0.8;
-  }
-  
+/* Title of the timeline */
+.title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* Styling the timeline wrapper */
+.timeline {
+  position: relative;
+  padding-left: 30px;
+  margin-left: 30px;
+}
+
+/* A pseudo-element for the vertical line */
+.timeline:before {
+  content: "";
+  position: absolute;
+  left: 30px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: #ccc;
+}
+
+/* Styling for each timeline element */
+.timeline-element {
+  position: relative;
+  margin-bottom: 38px;
+}
+
+/* The circular icon (could be any content) */
+.timeline-icon {
+  position: absolute;
+  left: -20px;
+  top: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 20px;
+}
+
+/* Content to the right of the timeline icon */
+.timeline-content {
+  width: fit-content;
+  margin-left: 60px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  /* background-color: #f9f9f9; */
+  /* background-color: #495a85; */
+  background-image: linear-gradient(to bottom, #5fffdf, #4590a9);
+
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Title of each timeline item */
+.timeline-title {
+  font-size: 1.5rem;
+  margin: 0;
+  color: #333;
+}
+
+/* Subtitle of each timeline item */
+.timeline-subtitle {
+  font-size: 1.2rem;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+/* Description of the timeline event */
+.timeline-description {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Button styles */
+.button {
+  margin-top: 15px;
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.workButton {
+  background-color: #06d6a0;
+  color: white;
+}
+
+.schoolButton {
+  background-color: #f9c74f;
+  color: white;
+}
+
+.button:hover {
+  opacity: 0.8;
+}

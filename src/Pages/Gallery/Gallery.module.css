@@ -1,33 +1,33 @@
 .galleryContainer {
-	text-align: center;
-	padding: 2rem 0;
-	background: transparent;
-	color: white;
-	overflow: hidden;
+  text-align: center;
+  padding: 2rem 0;
+  background: transparent;
+  color: white;
+  overflow: hidden;
 }
 
 .carousel {
-	position: relative;
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	gap: 3rem;
-	/* Add spacing between rows */
-	margin-top: 2rem;
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  /* Add spacing between rows */
+  margin-top: 2rem;
 }
 
 .carouselRow {
-	display: flex;
-	align-items: center;
-	justify-content: flex-start;
-	width: 200%;
-	/* Ensures smooth infinite scrolling */
-	animation-duration: 15s;
-	animation-timing-function: linear;
-	animation-iteration-count: infinite;
-	animation-fill-mode: forwards;
-	animation-play-state: running;
-	animation-fill-mode: both;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 200%;
+  /* Ensures smooth infinite scrolling */
+  animation-duration: 15s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+  animation-fill-mode: both;
 }
 
 /* 
@@ -36,13 +36,13 @@
 } */
 
 .carouselImage {
-	width: clamp(175px, 30vw, 300px);
-	aspect-ratio: 1 / 1;
-	margin: 0 max(160px, 15vw);
-	object-fit: cover;
-	border-radius: 20px;
-	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
-	background-color: #918a8a;
+  width: clamp(175px, 30vw, 300px);
+  aspect-ratio: 1 / 1;
+  margin: 0 max(160px, 15vw);
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  background-color: #918a8a;
 }
 
 /* @media (max-width: 768px) {
@@ -51,38 +51,38 @@
 	}
 } */
 .leftToRight {
-	animation-name: scroll-ltr;
+  animation-name: scroll-ltr;
 }
 
 .rightToLeft {
-	animation-name: scroll-rtl;
+  animation-name: scroll-rtl;
 }
 
 .galleryText {
-	color: #fff;
-	font-size: 1.5rem;
-	font-weight: bold;
-	letter-spacing: 1px;
-	text-align: center;
-	margin: 2rem 0;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-align: center;
+  margin: 2rem 0;
 }
 
 @keyframes scroll-ltr {
-	0% {
-		transform: translateX(-100%);
-	}
+  0% {
+    transform: translateX(-100%);
+  }
 
-	100% {
-		transform: translateX(0%);
-	}
+  100% {
+    transform: translateX(0%);
+  }
 }
 
 @keyframes scroll-rtl {
-	0% {
-		transform: translateX(0%);
-	}
+  0% {
+    transform: translateX(0%);
+  }
 
-	100% {
-		transform: translateX(-100%);
-	}
+  100% {
+    transform: translateX(-100%);
+  }
 }
